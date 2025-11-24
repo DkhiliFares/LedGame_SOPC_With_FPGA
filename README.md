@@ -30,7 +30,8 @@ This project demonstrates a **dynamic LED game** implemented on an FPGA (using N
   * PIO for LEDs
   * JTAG UART for debugging
 
-![Qsys Implementation](./758b0bf0-02fb-405d-a859-83a222d049d8.png)
+<img width="1245" height="630" alt="image" src="https://github.com/user-attachments/assets/0b1c245c-5e0b-4909-adb4-94795364a3ef" />
+
 
 ---
 
@@ -105,18 +106,5 @@ This project is open-source and free to use.
 
 ## Video Demonstration
 
-A video showing the LED running light game in action will be included in the `video/` folder.
+https://github.com/user-attachments/assets/4a47c151-a65c-418d-be61-a4c80a10be31
 
----
-
-This README gives a clear **overview, instructions, and technical details**, perfect for GitHub.
-
----
-
-I can also **add a Markdown section to embed the uploaded image** directly if you want it displayed on GitHub like:
-
-```markdown
-![Qsys Implementation](758b0bf0-02fb-405d-a859-83a222d049d8.png)
-```
-
-Do you want me to do that?
