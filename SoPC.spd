@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="SoPC/simulation/submodules/SoPC_irq_mapper.vho"
+   type="VHDL"
+   library="irq_mapper" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_rsp_xbar_mux_001.vho"
+   type="VHDL"
+   library="rsp_xbar_mux_001" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_rsp_xbar_mux.vho"
+   type="VHDL"
+   library="rsp_xbar_mux" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_rsp_xbar_demux_002.vho"
+   type="VHDL"
+   library="rsp_xbar_demux_002" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_cmd_xbar_mux.vho"
+   type="VHDL"
+   library="cmd_xbar_mux" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_cmd_xbar_demux_001.vho"
+   type="VHDL"
+   library="cmd_xbar_demux_001" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_cmd_xbar_demux.vho"
+   type="VHDL"
+   library="cmd_xbar_demux" />
+ <file
+   path="SoPC/simulation/submodules/mentor/altera_reset_controller.v"
+   type="VERILOG_ENCRYPT"
+   library="rst_controller"
+   simulator="modelsim" />
+ <file
+   path="SoPC/simulation/submodules/mentor/altera_reset_synchronizer.v"
+   type="VERILOG_ENCRYPT"
+   library="rst_controller"
+   simulator="modelsim" />
+ <file
+   path="SoPC/simulation/submodules/aldec/altera_reset_controller.v"
+   type="VERILOG_ENCRYPT"
+   library="rst_controller"
+   simulator="riviera" />
+ <file
+   path="SoPC/simulation/submodules/aldec/altera_reset_synchronizer.v"
+   type="VERILOG_ENCRYPT"
+   library="rst_controller"
+   simulator="riviera" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_id_router_002.vho"
+   type="VHDL"
+   library="id_router_002" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_id_router.vho"
+   type="VHDL"
+   library="id_router" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_addr_router_001.vho"
+   type="VHDL"
+   library="addr_router_001" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_addr_router.vho"
+   type="VHDL"
+   library="addr_router" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_mon_processeur_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo.vho"
+   type="VHDL"
+   library="mon_processeur_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo" />
+ <file
+   path="SoPC/simulation/submodules/mentor/altera_merlin_slave_agent.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="mon_processeur_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+   simulator="modelsim" />
+ <file
+   path="SoPC/simulation/submodules/mentor/altera_merlin_burst_uncompressor.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="mon_processeur_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+   simulator="modelsim" />
+ <file
+   path="SoPC/simulation/submodules/aldec/altera_merlin_slave_agent.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="mon_processeur_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+   simulator="riviera" />
+ <file
+   path="SoPC/simulation/submodules/aldec/altera_merlin_burst_uncompressor.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="mon_processeur_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+   simulator="riviera" />
+ <file
+   path="SoPC/simulation/submodules/mentor/altera_merlin_master_agent.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="mon_processeur_instruction_master_translator_avalon_universal_master_0_agent"
+   simulator="modelsim" />
+ <file
+   path="SoPC/simulation/submodules/aldec/altera_merlin_master_agent.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="mon_processeur_instruction_master_translator_avalon_universal_master_0_agent"
+   simulator="riviera" />
+ <file
+   path="SoPC/simulation/submodules/mentor/altera_merlin_slave_translator.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="mon_processeur_jtag_debug_module_translator"
+   simulator="modelsim" />
+ <file
+   path="SoPC/simulation/submodules/aldec/altera_merlin_slave_translator.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="mon_processeur_jtag_debug_module_translator"
+   simulator="riviera" />
+ <file
+   path="SoPC/simulation/submodules/mentor/altera_merlin_master_translator.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="mon_processeur_instruction_master_translator"
+   simulator="modelsim" />
+ <file
+   path="SoPC/simulation/submodules/aldec/altera_merlin_master_translator.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="mon_processeur_instruction_master_translator"
+   simulator="riviera" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_leds.vhd"
+   type="VHDL"
+   library="leds" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_switches.vhd"
+   type="VHDL"
+   library="switches" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_sysid_qsys_0.vho"
+   type="VHDL"
+   library="sysid_qsys_0" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_jtag_uart_0.vhd"
+   type="VHDL"
+   library="jtag_uart_0" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_onchip_memory2_0.hex"
+   type="HEX"
+   library="onchip_memory2_0" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_onchip_memory2_0.vhd"
+   type="VHDL"
+   library="onchip_memory2_0" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_mon_processeur.sdc"
+   type="SDC"
+   library="mon_processeur" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_mon_processeur.vhd"
+   type="VHDL"
+   library="mon_processeur" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_mon_processeur_jtag_debug_module_sysclk.vhd"
+   type="VHDL"
+   library="mon_processeur" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_mon_processeur_jtag_debug_module_tck.vhd"
+   type="VHDL"
+   library="mon_processeur" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_mon_processeur_jtag_debug_module_wrapper.vhd"
+   type="VHDL"
+   library="mon_processeur" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_mon_processeur_nios2_waves.do"
+   type="OTHER"
+   library="mon_processeur" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_mon_processeur_ociram_default_contents.dat"
+   type="DAT"
+   library="mon_processeur" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_mon_processeur_ociram_default_contents.hex"
+   type="HEX"
+   library="mon_processeur" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_mon_processeur_ociram_default_contents.mif"
+   type="MIF"
+   library="mon_processeur" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_mon_processeur_oci_test_bench.vhd"
+   type="VHDL"
+   library="mon_processeur" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_mon_processeur_rf_ram_a.dat"
+   type="DAT"
+   library="mon_processeur" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_mon_processeur_rf_ram_a.hex"
+   type="HEX"
+   library="mon_processeur" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_mon_processeur_rf_ram_a.mif"
+   type="MIF"
+   library="mon_processeur" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_mon_processeur_rf_ram_b.dat"
+   type="DAT"
+   library="mon_processeur" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_mon_processeur_rf_ram_b.hex"
+   type="HEX"
+   library="mon_processeur" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_mon_processeur_rf_ram_b.mif"
+   type="MIF"
+   library="mon_processeur" />
+ <file
+   path="SoPC/simulation/submodules/SoPC_mon_processeur_test_bench.vhd"
+   type="VHDL"
+   library="mon_processeur" />
+ <file path="SoPC/simulation/SoPC.vhd" type="VHDL" />
+ <file
+   path="SoPC/simulation/sopc_mon_processeur_jtag_debug_module_translator.vhd"
+   type="VHDL" />
+ <file
+   path="SoPC/simulation/sopc_onchip_memory2_0_s1_translator.vhd"
+   type="VHDL" />
+ <file
+   path="SoPC/simulation/sopc_jtag_uart_0_avalon_jtag_slave_translator.vhd"
+   type="VHDL" />
+ <file
+   path="SoPC/simulation/sopc_sysid_qsys_0_control_slave_translator.vhd"
+   type="VHDL" />
+ <file path="SoPC/simulation/sopc_switches_s1_translator.vhd" type="VHDL" />
+ <file path="SoPC/simulation/sopc_leds_s1_translator.vhd" type="VHDL" />
+ <file
+   path="SoPC/simulation/sopc_mon_processeur_instruction_master_translator.vhd"
+   type="VHDL" />
+ <file
+   path="SoPC/simulation/sopc_mon_processeur_data_master_translator.vhd"
+   type="VHDL" />
+ <topLevel name="SoPC" />
+ <deviceFamily name="cycloneii" />
+ <modelMap
+   controllerPath="SoPC.onchip_memory2_0"
+   modelPath="SoPC.onchip_memory2_0" />
+</simPackage>

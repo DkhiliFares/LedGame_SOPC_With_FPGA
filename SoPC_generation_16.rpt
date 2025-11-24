@@ -1,0 +1,170 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=C:/altera/13.0sp1/tp_codesign/ --output-directory=C:/altera/13.0sp1/tp_codesign/SoPC/ --report-file=bsf:C:/altera/13.0sp1/tp_codesign/SoPC.bsf --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=EP2C20F484C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/altera/13.0sp1/tp_codesign/SoPC.qsys
+Progress: Loading tp_codesign/SoPC.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.0]
+Progress: Parameterizing module clk_0
+Progress: Adding mon_processeur [altera_nios2_qsys 13.0]
+Progress: Parameterizing module mon_processeur
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding switches [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module switches
+Progress: Adding leds [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module leds
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: SoPC.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: SoPC.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info: SoPC.switches: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:/altera/13.0sp1/tp_codesign/ --output-directory=C:/altera/13.0sp1/tp_codesign/SoPC/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:C:/altera/13.0sp1/tp_codesign/SoPC.sopcinfo --report-file=html:C:/altera/13.0sp1/tp_codesign/SoPC.html --report-file=qip:C:/altera/13.0sp1/tp_codesign/SoPC/synthesis/SoPC.qip --report-file=cmp:C:/altera/13.0sp1/tp_codesign/SoPC.cmp --report-file=svd --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=EP2C20F484C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/altera/13.0sp1/tp_codesign/SoPC.qsys --language=VHDL
+Progress: Loading tp_codesign/SoPC.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.0]
+Progress: Parameterizing module clk_0
+Progress: Adding mon_processeur [altera_nios2_qsys 13.0]
+Progress: Parameterizing module mon_processeur
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding switches [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module switches
+Progress: Adding leds [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module leds
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: SoPC.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: SoPC.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info: SoPC.switches: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: SoPC: Generating SoPC "SoPC" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 7 modules, 27 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 15 modules, 59 connections
+Info: merlin_domain_transform: After transform: 30 modules, 159 connections
+Info: merlin_router_transform: After transform: 38 modules, 191 connections
+Info: reset_adaptation_transform: After transform: 39 modules, 150 connections
+Info: merlin_network_to_switch_transform: After transform: 54 modules, 182 connections
+Info: merlin_mm_transform: After transform: 54 modules, 182 connections
+Info: merlin_interrupt_mapper_transform: After transform: 55 modules, 185 connections
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: SoPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Info: mon_processeur: Starting RTL generation for module 'SoPC_mon_processeur'
+Info: mon_processeur:   Generation command is [exec C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=SoPC_mon_processeur --dir=C:/Users/ramzi/AppData/Local/Temp/alt0409_5115222513171010952.dir/0068_mon_processeur_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/ramzi/AppData/Local/Temp/alt0409_5115222513171010952.dir/0068_mon_processeur_gen//SoPC_mon_processeur_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+Info: mon_processeur: # 2025.11.17 09:57:42 (*) Starting Nios II generation
+Info: mon_processeur: # 2025.11.17 09:57:42 (*)   Checking for plaintext license.
+Info: mon_processeur: # 2025.11.17 09:57:42 (*)   Couldn't query license setup in Quartus directory C:/altera/13.0sp1/quartus
+Info: mon_processeur: # 2025.11.17 09:57:42 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: mon_processeur: # 2025.11.17 09:57:42 (*)   LM_LICENSE_FILE environment variable is empty
+Info: mon_processeur: # 2025.11.17 09:57:42 (*)   Plaintext license not found.
+Info: mon_processeur: # 2025.11.17 09:57:42 (*)   No license required to generate encrypted Nios II/e.
+Info: mon_processeur: # 2025.11.17 09:57:42 (*)   Elaborating CPU configuration settings
+Info: mon_processeur: # 2025.11.17 09:57:42 (*)   Creating all objects for CPU
+Info: mon_processeur: # 2025.11.17 09:57:43 (*)   Generating RTL from CPU objects
+Info: mon_processeur: # 2025.11.17 09:57:43 (*)   Creating plain-text RTL
+Info: mon_processeur: # 2025.11.17 09:57:44 (*) Done Nios II generation
+Info: mon_processeur: Done RTL generation for module 'SoPC_mon_processeur'
+Info: mon_processeur: "SoPC" instantiated altera_nios2_qsys "mon_processeur"
+Info: onchip_memory2_0: Starting RTL generation for module 'SoPC_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=SoPC_onchip_memory2_0 --dir=C:/Users/ramzi/AppData/Local/Temp/alt0409_5115222513171010952.dir/0069_onchip_memory2_0_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/ramzi/AppData/Local/Temp/alt0409_5115222513171010952.dir/0069_onchip_memory2_0_gen//SoPC_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2_0: Done RTL generation for module 'SoPC_onchip_memory2_0'
+Info: onchip_memory2_0: "SoPC" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: jtag_uart_0: Starting RTL generation for module 'SoPC_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=SoPC_jtag_uart_0 --dir=C:/Users/ramzi/AppData/Local/Temp/alt0409_5115222513171010952.dir/0070_jtag_uart_0_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/ramzi/AppData/Local/Temp/alt0409_5115222513171010952.dir/0070_jtag_uart_0_gen//SoPC_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0: Done RTL generation for module 'SoPC_jtag_uart_0'
+Info: jtag_uart_0: "SoPC" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: sysid_qsys_0: "SoPC" instantiated altera_avalon_sysid_qsys "sysid_qsys_0"
+Info: switches: Starting RTL generation for module 'SoPC_switches'
+Info: switches:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=SoPC_switches --dir=C:/Users/ramzi/AppData/Local/Temp/alt0409_5115222513171010952.dir/0072_switches_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/ramzi/AppData/Local/Temp/alt0409_5115222513171010952.dir/0072_switches_gen//SoPC_switches_component_configuration.pl  --do_build_sim=0  ]
+Info: switches: Done RTL generation for module 'SoPC_switches'
+Info: switches: "SoPC" instantiated altera_avalon_pio "switches"
+Info: leds: Starting RTL generation for module 'SoPC_leds'
+Info: leds:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=SoPC_leds --dir=C:/Users/ramzi/AppData/Local/Temp/alt0409_5115222513171010952.dir/0073_leds_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/ramzi/AppData/Local/Temp/alt0409_5115222513171010952.dir/0073_leds_gen//SoPC_leds_component_configuration.pl  --do_build_sim=0  ]
+Info: leds: Done RTL generation for module 'SoPC_leds'
+Info: leds: "SoPC" instantiated altera_avalon_pio "leds"
+Info: mon_processeur_instruction_master_translator: "SoPC" instantiated altera_merlin_master_translator "mon_processeur_instruction_master_translator"
+Info: mon_processeur_jtag_debug_module_translator: "SoPC" instantiated altera_merlin_slave_translator "mon_processeur_jtag_debug_module_translator"
+Info: mon_processeur_instruction_master_translator_avalon_universal_master_0_agent: "SoPC" instantiated altera_merlin_master_agent "mon_processeur_instruction_master_translator_avalon_universal_master_0_agent"
+Info: mon_processeur_jtag_debug_module_translator_avalon_universal_slave_0_agent: "SoPC" instantiated altera_merlin_slave_agent "mon_processeur_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: mon_processeur_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "SoPC" instantiated altera_avalon_sc_fifo "mon_processeur_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "SoPC" instantiated altera_merlin_router "addr_router"
+Info: addr_router_001: "SoPC" instantiated altera_merlin_router "addr_router_001"
+Info: id_router: "SoPC" instantiated altera_merlin_router "id_router"
+Info: id_router_002: "SoPC" instantiated altera_merlin_router "id_router_002"
+Info: rst_controller: "SoPC" instantiated altera_reset_controller "rst_controller"
+Info: cmd_xbar_demux: "SoPC" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: "SoPC" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_mux: "SoPC" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: rsp_xbar_demux_002: "SoPC" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_002"
+Info: rsp_xbar_mux: "SoPC" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file C:/altera/13.0sp1/tp_codesign/SoPC/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_001: "SoPC" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: Reusing file C:/altera/13.0sp1/tp_codesign/SoPC/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: irq_mapper: "SoPC" instantiated altera_irq_mapper "irq_mapper"
+Info: SoPC: Done SoPC" with 24 modules, 87 files, 1756136 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

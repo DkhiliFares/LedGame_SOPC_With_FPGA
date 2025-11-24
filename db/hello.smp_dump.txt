@@ -1,0 +1,9 @@
+
+State Machine - |tpsopc|SoPC:u0|SoPC_mon_processeur:mon_processeur|SoPC_mon_processeur_nios2_oci:the_SoPC_mon_processeur_nios2_oci|SoPC_mon_processeur_jtag_debug_module_wrapper:the_SoPC_mon_processeur_jtag_debug_module_wrapper|SoPC_mon_processeur_jtag_debug_module_tck:the_SoPC_mon_processeur_jtag_debug_module_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
