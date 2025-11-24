@@ -19,19 +19,16 @@ This project demonstrates a **dynamic LED game** implemented on an FPGA (using N
 
 * **FPGA Board:** [Specify your board, e.g., DE10-Lite, DE10-Nano, etc.]
 * **Peripherals:**
-
   * 8 Switches (input)
   * 8 LEDs (output)
 * **Qsys/Platform Designer Setup:**
-
   * Nios II Processor
   * On-chip memory
   * PIO for switches
   * PIO for LEDs
   * JTAG UART for debugging
 
-<img width="1245" height="630" alt="image" src="https://github.com/user-attachments/assets/0b1c245c-5e0b-4909-adb4-94795364a3ef" />
-
+<img width="1245" height="630" alt="Qsys System Design" src="https://github.com/user-attachments/assets/0b1c245c-5e0b-4909-adb4-94795364a3ef" />
 
 ---
 
@@ -70,31 +67,100 @@ usleep(delay_us);
 
 ---
 
-## Project Files
+## Project Structure
 
-The GitHub repository includes:
+```
+LedGame_SOPC_With_FPGA/
+│
+├── .qsys_edit/                 # Qsys/Platform Designer project files
+│   ├── system.qsys             # Main Qsys system file
+│   └── system.qpf              # Quartus project file
+│
+├── SoPC/                       # System on a Programmable Chip files
+│   ├── hardware/               # Hardware description files
+│   │   ├── top_level.vhd       # VHDL top-level entity
+│   │   └── constraints.sdc     # Timing constraints
+│   └── qsys_system/            # Generated Qsys system
+│       ├── synthesis/          # Synthesis output
+│       └── simulation/         # Simulation files
+│
+├── db/                         # Quartus database files
+│   ├── incremental_db/         # Incremental compilation data
+│   └── *.qdb                   # Quartus database files
+│
+├── output_files/               # Compilation outputs
+│   ├── *.sof                   # SRAM Object File (FPGA programming)
+│   ├── *.pof                   # Programmer Object File (configuration)
+│   └── *.rpt                   # Compilation reports
+│
+├── simulation/                 # Simulation files
+│   └── modelsim/               # ModelSim simulation
+│       ├── testbench.v         # Testbench for verification
+│       └── wave.do             # Waveform configuration
+│
+├── software/                   # Nios II software project
+│   ├── led_game/               # Main application
+│   │   ├── main.c              # Main C source code
+│   │   ├── Makefile            # Build configuration
+│   │   └── system.h            # System configuration header
+│   └── bsp/                    # Board Support Package
+│       ├── drivers/            # Hardware drivers
+│       └── settings/           # BSP configuration
+│
+├── docs/                       # Documentation
+│   ├── schematics/             # System schematics
+│   └── user_manual.md          # User guide
+│
+├── README.md                   # Project documentation (this file)
+└── .gitignore                  # Git ignore rules
+```
 
-* `software/` – Nios II Eclipse project with C code.
-* `hardware/` – Qsys/Platform Designer project and generated HDL.
-* `README.md` – Project description and usage.
-* `video/` – Demonstration video (to be added).
+---
+
+## Key Files Description
+
+### Hardware Files
+- **`SoPC/hardware/top_level.vhd`** - Top-level VHDL entity connecting Qsys system
+- **`.qsys_edit/system.qsys`** - Platform Designer system configuration
+- **`output_files/*.sof`** - FPGA programming file
+
+### Software Files
+- **`software/led_game/main.c`** - Main application logic for LED game
+- **`software/bsp/`** - Board Support Package for Nios II
+
+### Build & Database
+- **`db/`** - Quartus compilation database
+- **`incremental_db/`** - Incremental compilation data
+- **`output_files/`** - Final output files for programming
 
 ---
 
 ## Usage
 
-1. Open the project in **Eclipse for Nios II**.
-2. Compile the Nios II software project.
-3. Load the compiled `.elf` file onto the FPGA via **JTAG**.
-4. Turn the switches ON/OFF to observe the **LED running light speed change**.
+### Hardware Setup:
+1. Open `.qsys_edit/system.qpf` in Quartus Prime
+2. Compile the project to generate `.sof` file
+3. Program the FPGA with the generated `.sof` file
+
+### Software Setup:
+1. Open the project in **Eclipse for Nios II**
+2. Import the `software/led_game` project
+3. Build the project to generate `.elf` file
+4. Load the compiled `.elf` file onto the FPGA via **JTAG**
+
+### Running the Game:
+1. Turn switches ON/OFF to control LED running light speed
+2. Observe the speed change in real-time
+3. More switches ON = faster LED chaser speed
 
 ---
 
 ## Notes
 
-* Minimum delay is limited to keep LEDs visible.
-* You can modify `BASE_DELAY` in the C code to adjust the default speed.
-* Supports up to 8 switches, each adding speed to the LED chaser.
+* Minimum delay is limited to keep LEDs visible
+* You can modify `BASE_DELAY` in the C code to adjust the default speed
+* Supports up to 8 switches, each adding speed to the LED chaser
+* Project uses Quartus Prime and Nios II EDS for development
 
 ---
 
@@ -106,5 +172,14 @@ This project is open-source and free to use.
 
 ## Video Demonstration
 
-https://github.com/user-attachments/assets/4a47c151-a65c-418d-be61-a4c80a10be31
+![LED Game Demo](https://github.com/user-attachments/assets/4a47c151-a65c-418d-be61-a4c80a10be31)
+
+---
+
+## Troubleshooting
+
+- Ensure all Quartus and Nios II tools are properly installed
+- Check JTAG connection if programming fails
+- Verify switch and LED pin assignments match your FPGA board
+- Consult compilation reports in `output_files/` for errors
 
